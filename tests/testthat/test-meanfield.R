@@ -8,16 +8,16 @@ if ( requireNamespace("deSolve", quietly = TRUE) ) {
                   parms = list(r = 0.1), 
                   neighbors = 8)
 
-  init <- generate_initmat(mod, c(0.9, 0.1), nr = 1024)
+  init <- generate_initmat(mod, c(0.9, 0.1), nr = 512)
 
   ctrl <- list(console_output_every = 0)
 
   test_that("Mean field should be a very close approximation in logistic growth", { 
-    out <- run_camodel(mod, init, times = seq(0, 100), control = ctrl)
+    out <- run_camodel(mod, init, times = seq(0, 32), control = ctrl)
     ts <- out[["output"]][["covers"]]
     plot(out)
     
-    o <- run_meanfield(mod, init, times = seq(0, 100))
+    o <- run_meanfield(mod, init, times = seq(0, 32))
     plot(o[ ,"time"], o[ ,"+"], type = "l")
     lines(ts[ ,"t"], ts[ ,"+"], col = "red")
     

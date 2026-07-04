@@ -185,24 +185,24 @@ my_tbl <- do.call(rbind, my_output)
 tail(my_tbl, 10)
 
 ## ----trace_landscape, eval = FALSE--------------------------------------------
-#  
-#  mod <- ca_library("rock-paper-scissor")
-#  
-#  ctrl <- list(custom_output_every = 1,
-#               precompute_probas = FALSE,
-#               custom_output_fun = landscape_plotter(mod))
-#  
-#  init <- generate_initmat(mod, rep(1, 3)/3, 100, 178)
-#  
-#  out <- run_camodel(mod, init, seq(0, 128), control = ctrl)
-#  
+# 
+# mod <- ca_library("rock-paper-scissor")
+# 
+# ctrl <- list(custom_output_every = 1,
+#              precompute_probas = FALSE,
+#              custom_output_fun = landscape_plotter(mod))
+# 
+# init <- generate_initmat(mod, rep(1, 3)/3, 100, 178)
+# 
+# out <- run_camodel(mod, init, seq(0, 128), control = ctrl)
+# 
 
 ## ----trace_covers, eval = FALSE-----------------------------------------------
-#  
-#  ctrl <- list(custom_output_every = 1,
-#               custom_output_fun = trace_plotter(mod, init, max_samples = 128),
-#               console_output_every = 128)
-#  
-#  out <- run_camodel(mod, init, seq(0, 512), control = ctrl)
-#  
+# 
+# ctrl <- list(custom_output_every = 1,
+#              custom_output_fun = trace_plotter(mod, init, max_samples = 128),
+#              console_output_every = 128)
+# 
+# out <- run_camodel(mod, init, seq(0, 512), control = ctrl)
+# 
 

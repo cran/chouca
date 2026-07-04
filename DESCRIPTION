@@ -1,7 +1,7 @@
 Package: chouca
 Title: A Stochastic Cellular Automaton Engine
-Version: 0.1.99
-Authors@R: c(person("Alexandre", "Genin", , "a.a.h.genin@uu.nl", role = c("aut", "cre"),
+Version: 0.1.991
+Authors@R: c(person("Alexandre", "Genin", , "alexandre.genin@inrae.fr", role = c("aut", "cre"),
                     comment = c(ORCID = "0000-0002-3333-1338")), 
              person("Guillaume", "Dupont", , "", role = c("aut")), 
              person("Daniel", "Valencia", , "", role = c("aut")), 
@@ -25,14 +25,15 @@ VignetteBuilder: knitr
 URL: https://github.com/alexgenin/chouca
 BugReports: https://github.com/alexgenin/chouca/issues
 NeedsCompilation: yes
-Packaged: 2024-03-06 20:04:19 UTC; alex
-Author: Alexandre Genin [aut, cre] (<https://orcid.org/0000-0002-3333-1338>),
+Packaged: 2026-07-04 08:33:22 UTC; alex
+Author: Alexandre Genin [aut, cre] (ORCID:
+    <https://orcid.org/0000-0002-3333-1338>),
   Guillaume Dupont [aut],
   Daniel Valencia [aut],
   Mauro Zucconi [aut],
   M. Isidora Ávila-Thieme [aut],
   Sergio A. Navarrete [aut],
   Evie A. Wieters [aut]
-Maintainer: Alexandre Genin <a.a.h.genin@uu.nl>
+Maintainer: Alexandre Genin <alexandre.genin@inrae.fr>
 Repository: CRAN
-Date/Publication: 2024-03-07 15:00:02 UTC
+Date/Publication: 2026-07-04 10:10:20 UTC

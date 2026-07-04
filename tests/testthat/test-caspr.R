@@ -3,7 +3,8 @@
 # 
 
 # Test that results match those of caspr for models that are in common
-if ( dir.exists("./caspr_output") ) { 
+if ( dir.exists("./caspr_output") &&
+     ( exists("EXTENDED_TESTS") && EXTENDED_TESTS ) ) {
   
   kubo_caspr <- readRDS("./caspr_output/caspr_ts_forestgap.rds")
   rownames(kubo_caspr) <- NULL
